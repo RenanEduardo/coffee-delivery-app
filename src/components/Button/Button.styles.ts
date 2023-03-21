@@ -4,8 +4,7 @@ export const ButtonContainer = styled.button`
 	background-color: ${props => props.theme.colors.product.yellow};
 	border: none;
 	border-radius: 6px;
-	width: 132px;
-	height: 46px;
+	width: 8.25rem;
 	padding: 12px 8px;
 	color: ${props => props.theme.colors.base.white};
 	text-transform: uppercase;
