@@ -6,6 +6,7 @@ import { GlobalStyle } from './styles/GlobalStyle.styles';
 import { RemoveButton } from './components/RemoveButton/RemoveButton';
 import { ShoppingCartButton } from './components/ShoppingCartButton/ShoppingCartButton';
 import { QuantityInput } from './components/QuantityInput/QuantityInput';
+import { Select } from './components/Select/Select';
 export function App() {
 	return (
 		<>
@@ -20,11 +21,16 @@ export function App() {
 						gap: '8px',
 					}}
 				>
-					<Button />
+					<Button label='Label' />
 					<AddToCartButton />
 					<RemoveButton />
 					<ShoppingCartButton />
 					<QuantityInput />
+					<Select
+						label='Cartão de Crédito'
+						paymentMethod='CreditCard'
+						defaultStateChecked={false}
+					/>
 				</div>
 			</ThemeProvider>
 		</>
