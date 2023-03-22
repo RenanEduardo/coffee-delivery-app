@@ -7,6 +7,7 @@ import { RemoveButton } from './components/RemoveButton/RemoveButton';
 import { ShoppingCartButton } from './components/ShoppingCartButton/ShoppingCartButton';
 import { QuantityInput } from './components/QuantityInput/QuantityInput';
 import { Select } from './components/Select/Select';
+import { Input } from './components/Input/Input';
 export function App() {
 	return (
 		<>
@@ -31,6 +32,7 @@ export function App() {
 						paymentMethod='CreditCard'
 						defaultStateChecked={false}
 					/>
+					<Input placeholder='Text' isOptional />
 				</div>
 			</ThemeProvider>
 		</>
