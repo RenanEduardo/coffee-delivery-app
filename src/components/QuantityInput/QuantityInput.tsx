@@ -11,7 +11,6 @@ export function QuantityInput() {
 		}
 	}
 	function handleIncrease() {
-		debugger;
 		if (quantity < 99) {
 			setQuantity(prevCount => prevCount + 1);
 		}
