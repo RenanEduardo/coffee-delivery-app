@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { QuantityInputContainer } from './QuantityInput.styles';
 
 export function QuantityInput() {
-	const [quantity, setQuantity] = useState(98);
+	const [quantity, setQuantity] = useState(1);
 
 	function handleDecrease() {
 		if (quantity > 0) {

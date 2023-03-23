@@ -10,7 +10,7 @@ export const QuantityInputContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-	padding: 8px;
+	padding: 3px;
 	width: 72px;
 
 	button {
