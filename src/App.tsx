@@ -8,7 +8,18 @@ import { ShoppingCartButton } from './components/ShoppingCartButton/ShoppingCart
 import { QuantityInput } from './components/QuantityInput/QuantityInput';
 import { Select } from './components/Select/Select';
 import { Input } from './components/Input/Input';
+import { ProductCard } from './components/ProductCard/ProductCard';
+import { ProductModel } from './models/Product';
+
 export function App() {
+	const product: ProductModel = {
+		displayName: 'Expresso Tradicional',
+		description: 'O tradicional café feito com água quente e grãos moídos',
+		productImgSrc: 'Americano.png',
+		listPrice: '9,99',
+		tags: ['Tradicional'],
+	};
+
 	return (
 		<>
 			<ThemeProvider theme={defaultTheme}>
@@ -33,6 +44,9 @@ export function App() {
 						defaultStateChecked={false}
 					/>
 					<Input placeholder='Text' isOptional />
+				</div>
+				<div>
+					<ProductCard product={product} fullCard={false} />
 				</div>
 			</ThemeProvider>
 		</>
