@@ -8,7 +8,8 @@ import { ShoppingCartButton } from './components/ShoppingCartButton/ShoppingCart
 import { QuantityInput } from './components/QuantityInput/QuantityInput';
 import { Select } from './components/Select/Select';
 import { Input } from './components/Input/Input';
-import { ProductCard } from './components/ProductCard/ProductCard';
+import { ProductCardSmall } from './components/ProductCardSmall/ProductCardSmall';
+import { ProductCardFull } from './components/ProductCardFull/ProductCardFull';
 import { ProductModel } from './models/Product';
 
 export function App() {
@@ -17,7 +18,7 @@ export function App() {
 		description: 'O tradicional café feito com água quente e grãos moídos',
 		productImgSrc: 'Americano.png',
 		listPrice: '9,99',
-		tags: ['Tradicional'],
+		tags: ['Tradicional', 'Quente'],
 	};
 
 	return (
@@ -45,8 +46,19 @@ export function App() {
 					/>
 					<Input placeholder='Text' isOptional />
 				</div>
-				<div>
-					<ProductCard product={product} fullCard={false} />
+				<div
+					style={{
+						margin: '25px',
+					}}
+				>
+					<ProductCardSmall product={product} />
+				</div>
+				<div
+					style={{
+						margin: '25px',
+					}}
+				>
+					<ProductCardFull product={product} />
 				</div>
 			</ThemeProvider>
 		</>

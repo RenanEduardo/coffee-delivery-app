@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProductCardContainer = styled.div`
+export const ProductCardSmallContainer = styled.div`
 	max-width: 368px;
 	display: flex;
 	flex-direction: row;
@@ -30,13 +30,13 @@ export const ProductCardContainer = styled.div`
 		line-height: 130%;
 		color: ${props => props.theme.colors.base.baseText};
 	}
-	#product,
+	#smallCard,
 	#actions {
 		display: flex;
 		flex-direction: row;
 	}
 
-	#product {
+	#smallCard {
 		gap: 20px;
 	}
 	#actions {

@@ -2,17 +2,16 @@ import { useEffect, useState } from 'react';
 import { ProductModel } from '../../models/Product';
 import { QuantityInput } from '../QuantityInput/QuantityInput';
 import { RemoveButton } from '../RemoveButton/RemoveButton';
-import { ProductCardContainer } from './ProductCard.styles';
+import { ProductCardSmallContainer } from './ProductCardSmall.styles';
 
 interface ProductCardProps {
 	product: ProductModel;
-	fullCard: boolean;
 }
 
-export function ProductCard({ product, fullCard }: ProductCardProps) {
+export function ProductCardSmall({ product }: ProductCardProps) {
 	return (
-		<ProductCardContainer>
-			<div id='product'>
+		<ProductCardSmallContainer>
+			<div id='smallCard'>
 				<img
 					src={`/src/assets/${product.productImgSrc}`}
 					alt={product.displayName}
@@ -26,6 +25,6 @@ export function ProductCard({ product, fullCard }: ProductCardProps) {
 				</div>
 			</div>
 			<strong id='price'>{`R$ ${product.listPrice}`}</strong>
-		</ProductCardContainer>
+		</ProductCardSmallContainer>
 	);
 }
