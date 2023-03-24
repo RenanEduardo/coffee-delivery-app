@@ -11,6 +11,7 @@ import { Input } from './components/Input/Input';
 import { ProductCardSmall } from './components/ProductCardSmall/ProductCardSmall';
 import { ProductCardFull } from './components/ProductCardFull/ProductCardFull';
 import { ProductModel } from './models/Product';
+import { Home } from './pages/home/Home';
 
 export function App() {
 	const product: ProductModel = {
@@ -25,41 +26,7 @@ export function App() {
 		<>
 			<ThemeProvider theme={defaultTheme}>
 				<GlobalStyle />
-				<div
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						alignItems: 'center',
-						justifyContent: 'center',
-						gap: '8px',
-					}}
-				>
-					<Button label='Label' />
-					<AddToCartButton />
-					<RemoveButton />
-					<ShoppingCartButton />
-					<QuantityInput />
-					<Select
-						label='Cartão de Crédito'
-						paymentMethod='CreditCard'
-						defaultStateChecked={false}
-					/>
-					<Input placeholder='Text' isOptional />
-				</div>
-				<div
-					style={{
-						margin: '25px',
-					}}
-				>
-					<ProductCardSmall product={product} />
-				</div>
-				<div
-					style={{
-						margin: '25px',
-					}}
-				>
-					<ProductCardFull product={product} />
-				</div>
+				<Home />
 			</ThemeProvider>
 		</>
 	);
