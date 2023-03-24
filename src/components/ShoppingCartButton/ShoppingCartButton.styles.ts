@@ -6,4 +6,5 @@ export const ShoppingCartButtonContainer = styled.button`
 	border-radius: 6px;
 	color: ${props => props.theme.colors.product.yellowDark};
 	background-color: ${props => props.theme.colors.product.yellowLight};
+	cursor: pointer;
 `;
