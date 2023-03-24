@@ -4,7 +4,7 @@ export const QuantityInputContainer = styled.div`
 	border: none;
 	border-radius: 6px;
 	background-color: ${props => props.theme.colors.base.baseButton};
-	max-height: 32px;
+	max-height: 38px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
